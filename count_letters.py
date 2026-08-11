@@ -1,4 +1,4 @@
-def count_letter(string_of_letters):
+def count_letters(string_of_letters):
     """
     Finds the amount of each letter in a string, counting upper- and lower-case letters as the same letter.
         
