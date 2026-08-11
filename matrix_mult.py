@@ -24,7 +24,7 @@ def matrix_mult(matrix_a, matrix_b):
         matrix_b (list of lists of floats): The second matrix that will be used to calculate the matrix product.
             
     Returns:
-        matrix_product ()
+        matrix_product (list of lists of floats): The resulting matrix product.
     """
     matrix_product = []
 
@@ -56,7 +56,7 @@ def matrix_mult(matrix_a, matrix_b):
 # Additionally, the amount of numbers in each row is equal to the
 # number of columns in the matrix.
 
-list1 = [[3,1], [-8,5], [1,4]]
-list2 = [[1,4,7,1], [-5,-8,4,3]]
-matrix_product = matrix_mult(list1, list2)
-print(matrix_product)
+#list1 = [[3,1], [-8,5], [1,4]]
+#list2 = [[1,4,7,1], [-5,-8,4,3]]
+#matrix_product = matrix_mult(list1, list2)
+#print(matrix_product)
