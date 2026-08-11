@@ -8,15 +8,16 @@ def count_letters(string_of_letters):
     Returns:
         number_of_letters (dictionary): A dictionary containing all of the letters in the original string and the amounts of each.
     """
-    number_of_letters = {}
+    number_of_letters_unsorted = {}
     alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U" "V", "W", "X", "Y", "Z"]
     for i in string_of_letters:
         if i.upper() in alphabet:
-            if i in number_of_letters:
-                number_of_letters[i.upper()] += 1
+            if i in number_of_letters_unsorted:
+                number_of_letters_unsorted[i.upper()] += 1
             else:
-                number_of_letters[i.upper()] = 1
+                number_of_letters_unsorted[i.upper()] = 1
+    number_of_letters = dict(sorted(number_of_letters_unsorted.items()))
     return number_of_letters
 
-str_of_letters = "one two three four five six seven eight nine ten"
-print(count_letters(str_of_letters))
+#str_of_letters = "one two three four five six seven eight nine ten"
+#print(count_letters(str_of_letters))
